@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Login</title>
+</head>
+<body>
+  <span class="background"></span>
+  <span class="centering">
+    <form class="my-form">
+      <span class="login-welcome-row">  
+        <img src="./img/astronaut.jpg" alt="astronauta" class="login-welcome">
+        <h1>LogIn!</h1>
+      </span>
+      <div class="text-field">
+        <label for="email">Email</label>
+        <input 
+          aria-label="Email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          autocomplete="off"
+        >
+        <img src="./img/email.svg" alt="email icon" title="Email Icon">
+      </div>
+
+      <div class="text-field">
+        <label for="password">Password</label>
+        <input 
+          aria-label="Password"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your Password"
+          title="Minimo 6 caracteres, una mayuscula y un numero"
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+          required
+        >
+        <img src="./img/password.svg" alt="password icon" title="Password Icon">
+      </div>
+
+      <input type="submit" value="Login" class="my-form__button">
+
+      <div class="my-form__actions">
+        <div class="my-form__row">
+          <span>Olvidaste tu contraseña?</span>
+          <a href="#" title="Reset Password">Reset Password</a>
+        </div>
+        <div class="my-form__singup">
+          <a href="#" title="Crear Cuenta">Crear Cuenta</a>
+        </div>
+      </div>
+    </form>
+  </span>
+</body>
+</html>
