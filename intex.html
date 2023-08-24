@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style lang="css">
+      .main {
+        border: 1px solid #000;
+        height: 300px;
+        width: 700px; /*sobra 200px para repartir*/
+        border: 1px solid black;
+        display: flex;
+        /* flex-flow: row wrap; */
+      }
+
+      .main [class*="item-"] {
+        width: 100px;
+        height: 100px;
+      }
+
+      .item-1 {
+        background-color: lightcoral;
+      }
+
+      .item-2 {
+        background-color: lightblue;
+      }
+
+      .item-3 {
+        background-color: lightgray;
+      }
+
+      .item-4 {
+        background-color: lightgreen;
+      }
+
+      .item-5 {
+        background-color: lightpink;
+      }
+
+      .group{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="item-1">Item 1</div>
+      <div class="item-2">Item 2</div>
+      <div class="item-3">Item 3</div>
+      <section class="group">
+        <div class="item-4">Item 4</div>
+        <div class="item-5">Item 5</div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+header{
+  background-color: #369;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & img {
+    width: 150px;
+  }
+
+}
+
+nav {
+  & ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: flex-end; */
+    list-style-type: none;
+  }
+
+  & li {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+  }
+}
