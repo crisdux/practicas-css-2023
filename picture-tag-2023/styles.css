@@ -1,0 +1,11 @@
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.picture-container .img-defecto{
+  width: 500px;
+}
