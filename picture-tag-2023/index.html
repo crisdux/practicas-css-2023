@@ -8,8 +8,11 @@
 </head>
 <body>
   <picture class="picture-container">
+    <!-- iillimani se muestra a partir de 768px en adelante  -->
     <source media="(width >= 768px)" srcset="./img/illimani.jpeg">
+    <!-- los flamengos se muetra por defecto en pantallas moviles -->
     <source srcset="./img/flamengos.jpeg">
+    <!-- si el navegador no soporta picture se muestra uyuni  -->
     <img src="./img/uyuni.jpeg" alt="uyuni" class="img-defecto">
   </picture>
 </body>
