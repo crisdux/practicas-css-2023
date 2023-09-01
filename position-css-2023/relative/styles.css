@@ -1,0 +1,57 @@
+.container{
+  width: 400px;
+  height: 400px;
+  border:1px solid black;
+  margin: 0 auto;
+}
+
+[class*="item-"]{
+  width: 100px;
+  height: 100px;
+  color: #eee;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-1{
+  background-color: blue;
+  /* habilitamos 5 propiedades: top, bottom, left , right y z-index  */
+  position: relative;
+  left:500px;
+}
+
+.item-2{
+  background-color: red;
+  position: relative;
+  right: 100px;
+}
+
+.item-3{
+  background-color: violet;
+  position: relative;
+  top: 100px;
+  left: 250px;
+}
+
+.item-4{
+  background-color: lime;
+}
+
+/*
+  Cuando posicionamos un elemento con relative pasan 3 cosas:
+
+  1. Se habilitan 5 propiedades que solo un elemento con position tienen:
+    - top
+    - left
+    - rigth
+    - bottom
+    - z-index
+
+  2. position:relative no afecta a priori visualmente al elemento en si,
+    al ponerlo no pasara nada a simple vista
+
+  3. Cuando movemos un elemento con position relative su espacio reservado
+    se mantiene y por ello ningun otro elemento puede ocupar ese espacio
+*/
