@@ -1,0 +1,73 @@
+.container{
+  border:1px solid red;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #333;
+  position: relative;
+}
+
+[class*="item-"]{
+  color: #eee;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+.item-1{
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.item-2{
+  background-color: lime;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.item-3{
+  background-color: peru;
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+
+.item-4{
+  background-color: violet;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.item-5{
+  background-color: yellow;
+  margin: auto;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*
+  Cuando usamos position absolute pasan algunas cosas: 
+  1. Se habilitan las propiedades:
+    - top
+    - bottom
+    - left
+    - rigth
+    - z-index
+
+  2. al poner position absolute a un elemento si hay cambios visuales que se pueden ver de manera inmediata
+
+  3. el elemento con position absolute pierde su espacio reservado y es por ello que otros elementos pueden ocupar su espacio
+  Esto es lo opuesto a lo que pasa con position relative
+
+  4. los items con position absolute necesitan un padre posiciondo, los item de esta manera se posicionan respecto a su padre posicionado. Si no existe un padre posicionado entonces los item se acomodan respecto al vieport
+*/
